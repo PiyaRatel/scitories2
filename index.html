@@ -11,7 +11,75 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build.json", {onProgress: UnityProgress});
     </script>
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+/* Back */
+.success {
+  color: #fff;
+   background-color: #999;
+}
+
+.success:hover {
+  background-color: #333;
+  color: white;
+}
+
+</style>
+    
+    <style>
+/* Tooltip container */
+.tooltip {
+  position: fixed;
+  top: 20px;
+  left:30px;
+  display: inline-block;
+  
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 600px;
+  background-color: none;
+  color: #fff;
+  text-align: right;
+  padding: 5px 0;
+  border-radius: 6px;
+  
+  
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
   </head>
+  
+  
   <body>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 1280px; height: 720px"></div>
@@ -21,5 +89,20 @@
         <div class="title">ClimatePortal</div>
       </div>
     </div>
+    
+    
+    <button class="btn success" onclick="window.location.href='https://riyapatel262.wixsite.com/stories/redirect'">Back</button>    
+<button class="tooltip" style=" border: none;
+  padding: 2px 3px;
+  display: inline-block;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 5px;
+  border-radius: 4px;">i
+  <img src="guide.png" class="tooltiptext">
+</button>
   </body>
 </html>
